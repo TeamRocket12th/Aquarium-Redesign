@@ -583,6 +583,22 @@ h3 {
   top: 50%;
 }
 
+.-bottom-10 {
+  bottom: -2.5rem;
+}
+
+.-bottom-20 {
+  bottom: -5rem;
+}
+
+.-bottom-0 {
+  bottom: -0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -659,6 +675,10 @@ h3 {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -674,6 +694,14 @@ h3 {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.pb-\[10vh\] {
+  padding-bottom: 10vh;
+}
+
+.pb-\[5vh\] {
+  padding-bottom: 5vh;
 }
 
 .text-center {
