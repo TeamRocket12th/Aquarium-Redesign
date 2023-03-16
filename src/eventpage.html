@@ -6,13 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>國立海洋生物博物館-特展介紹</title>
     <link rel="icon" href="../assets/images/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="bg-slate-200">
-    <h1 class="bg-secondary text-center text-primary">這裡是特展介紹</h1>
-    <h2 class="text-center text-primary">我是副標題</h2>
-    <p class="bg-slate-200 p-10 text-descript">這裡是內文</p>
-    <div class="h-5 bg-fn"></div>
-    <button class="btn my-10">更多資訊</button>
+  <body>
+    <!-- footer bar-->
+    <section
+      class="w-full bg-secondary pt-[36px] pb-[55px] px-[30px] md:px-[117px] xl:px-[134px] font-sans text-primary"
+    >
+      <div
+        class="flex flex-col xl:flex-row gap-6 xl:gap-7 items-start xl:justify-between"
+      >
+        <div class="w-full xl:w-auto">
+          <h3
+            class="pb-1 xl:pb-2 font-bold border-b border-primary xl:border-none"
+          >
+            <a href="#"> 最新動態 </a>
+          </h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">館方快訊</a></li>
+            <li><a href="#">相關報導</a></li>
+            <li><a href="#">新南向政策</a></li>
+            <li><a href="#">電子報</a></li>
+            <li><a href="#">影音專區</a></li>
+            <li><a href="#">館方花絮</a></li>
+            <li><a href="#">主題專區</a></li>
+            <li><a href="#">奧秘海洋部落格</a></li>
+          </ul>
+          <span class="material-icons-outlined text-[14px] xl:hidden">
+            add
+          </span>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 特展/活動 </a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">特展介紹</a></li>
+            <li><a href="#">海生館節目表</a></li>
+            <li><a href="#">科教活動</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 水族館</a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">展區介紹</a></li>
+            <li><a href="#">展館線上看</a></li>
+            <li><a href="#">無障礙動線及設施</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 館務互動</a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">服務及票價</a></li>
+            <li><a href="#">網路購票</a></li>
+            <li><a href="#">夜宿海生館</a></li>
+            <li><a href="#">無障礙服務</a></li>
+            <li><a href="#">交通資訊</a></li>
+            <li><a href="#">場地租借</a></li>
+            <li><a href="#">常見問與答Q&A</a></li>
+            <li><a href="#">我要諮詢</a></li>
+            <li><a href="#">諮詢進度查詢</a></li>
+            <li><a href="#">雙語詞彙表</a></li>
+            <li><a href="#">問卷調查</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 研究及保育</a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">研究主題網</a></li>
+            <li><a href="#">保育</a></li>
+            <li><a href="#">白鯨研究與照護</a></li>
+            <li><a href="#">海洋學院</a></li>
+            <li><a href="#">研究人員</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 教育資源</a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">國中小教學資源</a></li>
+            <li><a href="#">行動展示箱</a></li>
+            <li><a href="#">多媒體影音管理平台</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="mb-2 font-bold"><a href="#"> 關於我們</a></h3>
+          <ul class="hidden xl:flex flex-col text-base font-normal gap-2">
+            <li><a href="#">關於本館</a></li>
+            <li><a href="#">政府公開資訊</a></li>
+            <li><a href="#">本館的施政計畫</a></li>
+            <li><a href="#">組織編制與聯絡</a></li>
+            <li><a href="#">聯絡資訊</a></li>
+            <li><a href="#">館區配置</a></li>
+            <li><a href="#">為民服務理念</a></li>
+            <li><a href="#">檔案管理應用專區</a></li>
+            <li><a href="#">圖書館（另開連結）</a></li>
+            <li><a href="#">建館緣由</a></li>
+            <li>
+              <a href="#">公職人員利益衝突<br />迴避法專區</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 國立海洋生物博物館 -->
+      <div class="w-[328px]">
+        <h3 class="border-b font-bold border-primary pb-3">
+          國立海洋生物博物館
+        </h3>
+        <p class="text-[14px] pt-3">944401 屏東縣車城鄉後灣村後灣路2號</p>
+        <p class="text-[14px] pt-3">
+          遊客服務電話: (08) 882-5678 ｜傳真: (08) 882-5061
+        </p>
+        <p class="text-[14px] pt-3">
+          公部門電話: (08) 882-5001 ｜傳真: (08) 882-4504
+        </p>
+      </div>
+      <!-- soical media icon -->
+      <div class=""></div>
+    </section>
+    <footer class="w-full bg-primary">
+      <p
+        class="text-xs leading-[18px] text-white pt-[32px] pb-[30px] md:pt-[28px] md:pb-[34px] text-center"
+      >
+        國立海洋生物博物館 版權所有 ©2016
+      </p>
+    </footer>
   </body>
 </html>
