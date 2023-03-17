@@ -551,18 +551,174 @@ h3 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-\[24px\] {
+  right: 24px;
+}
+
+.top-\[81px\] {
+  top: 81px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.mb-\[79px\] {
+  margin-bottom: 79px;
+}
+
+.mt-\[147px\] {
+  margin-top: 147px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
+.mt-\[84px\] {
+  margin-top: 84px;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-5 {
   height: 1.25rem;
 }
 
+.h-\[96px\] {
+  height: 96px;
+}
+
+.w-\[112px\] {
+  width: 112px;
+}
+
+.w-\[328px\] {
+  width: 328px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-main {
+  border-radius: 8px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 49 96 / var(--tw-border-opacity));
+}
+
 .bg-fn {
   --tw-bg-opacity: 1;
   background-color: rgb(243 175 55 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 49 96 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -580,12 +736,133 @@ h3 {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\'\.\.\/assets\/images\/\7279\5C55\/\5357\85CD\7E6B\96E8\.jpeg\'\)\] {
+  background-image: url('../assets/images/特展/南藍繫雨.jpeg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/\7279\5C55\/\6D77\6D0B\56E0\7D20\.png\'\)\] {
+  background-image: url('../assets/images/特展/海洋因素.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/\7279\5C55\/\7A76\7ADF\6D77\6D0B\63A2\7D22\.png\'\)\] {
+  background-image: url('../assets/images/特展/究竟海洋探索.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/\9996\9801\/\85CD\8272\5E95\5716-big\.png\'\)\] {
+  background-image: url('../assets/images/首頁/藍色底圖-big.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-\[30px\] {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.px-\[46px\] {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
+}
+
+.pb-\[2px\] {
+  padding-bottom: 2px;
+}
+
+.pb-\[30px\] {
+  padding-bottom: 30px;
+}
+
+.pb-\[55px\] {
+  padding-bottom: 55px;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pt-\[32px\] {
+  padding-top: 32px;
+}
+
+.pt-\[36px\] {
+  padding-top: 36px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-sans {
+  font-family: Noto Sans TC;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.leading-\[18px\] {
+  line-height: 18px;
 }
 
 .text-descript {
@@ -596,4 +873,229 @@ h3 {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(18 49 96 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:top-\[-93px\]::before {
+  content: var(--tw-content);
+  top: -93px;
+}
+
+.before\:-z-10::before {
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.before\:flex::before {
+  content: var(--tw-content);
+  display: flex;
+}
+
+.before\:h-\[618px\]::before {
+  content: var(--tw-content);
+  height: 618px;
+}
+
+.before\:w-\[1012px\]::before {
+  content: var(--tw-content);
+  width: 1012px;
+}
+
+.before\:rounded-3xl::before {
+  content: var(--tw-content);
+  border-radius: 1.5rem;
+}
+
+.before\:bg-white::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.before\:opacity-90::before {
+  content: var(--tw-content);
+  opacity: 0.9;
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:left-0::after {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.after\:bg-\[\#FFFFFF\]::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.after\:py-\[15px\]::after {
+  content: var(--tw-content);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.after\:opacity-\[85\%\]::after {
+  content: var(--tw-content);
+  opacity: 85%;
+}
+
+.after\:content-\[\'\5357\85CD\7E6B\8A9E-\6F5B\9032\73CA\745A\6D77\7279\5C55\'\]::after {
+  --tw-content: '南藍繫語-潛進珊瑚海特展';
+  content: var(--tw-content);
+}
+
+.hover\:border-b-4:hover {
+  border-bottom-width: 4px;
+}
+
+.hover\:border-fn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 175 55 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
+  .md\:ml-\[25px\] {
+    margin-left: 25px;
+  }
+
+  .md\:mt-\[43px\] {
+    margin-top: 43px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:h-\[210px\] {
+    height: 210px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
+  }
+
+  .md\:px-\[117px\] {
+    padding-left: 117px;
+    padding-right: 117px;
+  }
+
+  .md\:pb-\[34px\] {
+    padding-bottom: 34px;
+  }
+
+  .md\:pt-\[28px\] {
+    padding-top: 28px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:right-\[132px\] {
+    right: 132px;
+  }
+
+  .xl\:top-\[108px\] {
+    top: 108px;
+  }
+
+  .xl\:ml-\[134px\] {
+    margin-left: 134px;
+  }
+
+  .xl\:mt-\[135px\] {
+    margin-top: 135px;
+  }
+
+  .xl\:mt-\[51px\] {
+    margin-top: 51px;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-\[363px\] {
+    height: 363px;
+  }
+
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
+  }
+
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .xl\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .xl\:border-none {
+    border-style: none;
+  }
+
+  .xl\:px-\[134px\] {
+    padding-left: 134px;
+    padding-right: 134px;
+  }
+
+  .xl\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
 }
