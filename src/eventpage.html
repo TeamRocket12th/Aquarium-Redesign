@@ -6,13 +6,274 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>國立海洋生物博物館-特展介紹</title>
     <link rel="icon" href="../assets/images/logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="bg-slate-200">
-    <h1 class="bg-secondary text-center text-primary">這裡是特展介紹</h1>
-    <h2 class="text-center text-primary">我是副標題</h2>
-    <p class="bg-slate-200 p-10 text-descript">這裡是內文</p>
-    <div class="h-5 bg-fn"></div>
-    <button class="btn my-10">更多資訊</button>
+  <body>
+    <!--------------------------------- main ---------------------------------->
+    <section>
+      <!-- class="bg-[url('../assets/images/首頁/藍色底圖-big.png')]" -->
+      <!--------------------------------- menu ---------------------------------->
+      <div class="relative text-primary md:ml-[25px] xl:ml-[134px]">
+        <!-- 跳頁 -->
+        <div
+          class="hidden flex-row text-base md:mt-[43px] md:mb-[40px] md:flex xl:mt-[51px]"
+        >
+          <a href="#"> 首頁 </a>
+          <span class="mx-1">></span>
+          <a href="#"> 特展介紹 </a>
+        </div>
+        <ul class="flex flex-row gap-8 font-medium text-primary">
+          <li class="px-[10px] pb-[10px] hover:border-b-4 hover:border-fn">
+            <h2><a href="#">特展介紹</a></h2>
+          </li>
+          <li class="">
+            <h2><a href="#">海生館節目表</a></h2>
+          </li>
+          <li class="">
+            <h2><a href="#">科教活動</a></h2>
+          </li>
+        </ul>
+        <!-- 魚 img -->
+        <img
+          class="absolute right-[24px] top-[81px] h-[96px] w-[112px] xl:right-[132px] xl:top-[108px]"
+          src="../assets/images/特展/小魚-1.png"
+          alt=""
+        />
+      </div>
+      <!--------------------------------- 特展介紹 ---------------------------------->
+      <div
+        class="relative z-0 mx-auto mt-[30px] flex flex-col items-center bg-[url('../assets/images/首頁/藍色底圖-big.png')] bg-cover bg-no-repeat px-[30px]"
+      >
+        <h1
+          class="mt-[147px] mb-[79px] inline rounded-full bg-fn px-[46px] pb-[2px] font-bold text-white"
+        >
+          現在特展
+        </h1>
+        <!-- 活動 card -->
+        <div
+          class="relative grid w-full grid-cols-1 gap-6 before:absolute before:top-[-93px] before:-z-10 before:flex before:h-[618px] before:w-[1012px] before:rounded-3xl before:bg-white before:opacity-90 before:content-[''] md:h-[210px] md:grid-cols-3 xl:h-[363px]"
+        >
+          <div
+            class="relative rounded-main bg-[url('../assets/images/特展/南藍繫雨.jpeg')] bg-cover bg-center bg-no-repeat after:absolute after:right-0 after:left-0 after:w-full after:bg-[#FFFFFF] after:py-[15px] after:opacity-[85%] after:content-['南藍繫語-潛進珊瑚海特展']"
+          ></div>
+          <div
+            class="rounded-main bg-[url('../assets/images/特展/究竟海洋探索.png')] bg-cover bg-center bg-no-repeat"
+          ></div>
+          <div
+            class="rounded-main bg-[url('../assets/images/特展/海洋因素.png')] bg-cover bg-center bg-no-repeat"
+          ></div>
+        </div>
+      </div>
+
+      <!--------------------------------- info ---------------------------------->
+    </section>
+    <!--------------------------------- footer ---------------------------------->
+    <footer>
+      <!-- footer bar-->
+      <section
+        class="w-full bg-secondary px-[30px] pt-[36px] pb-[55px] text-primary md:px-[117px] xl:px-[134px]"
+      >
+        <div
+          class="flex flex-col items-start gap-6 xl:flex-row xl:justify-between xl:gap-7"
+        >
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 最新動態 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">館方快訊</a></li>
+              <li><a href="#">相關報導</a></li>
+              <li><a href="#">新南向政策</a></li>
+              <li><a href="#">電子報</a></li>
+              <li><a href="#">影音專區</a></li>
+              <li><a href="#">館方花絮</a></li>
+              <li><a href="#">主題專區</a></li>
+              <li><a href="#">奧秘海洋部落格</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 特展/活動 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">特展介紹</a></li>
+              <li><a href="#">海生館節目表</a></li>
+              <li><a href="#">科教活動</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 水族館 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">展區介紹</a></li>
+              <li><a href="#">展館線上看</a></li>
+              <li><a href="#">無障礙動線及設施</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 館務互動 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">服務及票價</a></li>
+              <li><a href="#">網路購票</a></li>
+              <li><a href="#">夜宿海生館</a></li>
+              <li><a href="#">無障礙服務</a></li>
+              <li><a href="#">交通資訊</a></li>
+              <li><a href="#">場地租借</a></li>
+              <li><a href="#">常見問與答Q&A</a></li>
+              <li><a href="#">我要諮詢</a></li>
+              <li><a href="#">諮詢進度查詢</a></li>
+              <li><a href="#">雙語詞彙表</a></li>
+              <li><a href="#">問卷調查</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 研究及保育 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">研究主題網</a></li>
+              <li><a href="#">保育</a></li>
+              <li><a href="#">白鯨研究與照護</a></li>
+              <li><a href="#">海洋學院</a></li>
+              <li><a href="#">研究人員</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 教育資源 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">國中小教學資源</a></li>
+              <li><a href="#">行動展示箱</a></li>
+              <li><a href="#">多媒體影音管理平台</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 關於我們 </a>
+            </h3>
+            <span
+              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">關於本館</a></li>
+              <li><a href="#">政府公開資訊</a></li>
+              <li><a href="#">本館的施政計畫</a></li>
+              <li><a href="#">組織編制與聯絡</a></li>
+              <li><a href="#">聯絡資訊</a></li>
+              <li><a href="#">館區配置</a></li>
+              <li><a href="#">為民服務理念</a></li>
+              <li><a href="#">檔案管理應用專區</a></li>
+              <li><a href="#">圖書館（另開連結）</a></li>
+              <li><a href="#">建館緣由</a></li>
+              <li>
+                <a href="#">公職人員利益衝突<br />迴避法專區</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-[84px] flex flex-col gap-8 md:flex-row md:justify-between xl:mt-[135px]"
+        >
+          <!-- 國立海洋生物博物館 -->
+          <div class="w-[328px]">
+            <h3 class="border-b border-primary pb-3 font-bold">
+              國立海洋生物博物館
+            </h3>
+            <p class="pt-3 text-[14px]">944401 屏東縣車城鄉後灣村後灣路2號</p>
+            <p class="whitespace-nowrap pt-3 text-[14px]">
+              遊客服務電話: (08) 882-5678 ｜傳真: (08) 882-5061
+            </p>
+            <p class="whitespace-nowrap pt-3 text-[14px]">
+              公部門電話: (08) 882-5001 ｜傳真: (08) 882-4504
+            </p>
+          </div>
+          <!-- soical media icon -->
+          <div class="flex flex-row items-end gap-4">
+            <a href="#">
+              <i
+                class="fa-brands fa-youtube rounded-full bg-primary p-2 text-[20px] text-white"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-facebook rounded-full bg-primary p-2 text-[20px] text-white"
+              ></i>
+            </a>
+            <a href="#">
+              <i
+                class="fa-brands fa-instagram rounded-full bg-primary p-2 text-[20px] text-white"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <div class="w-full bg-primary">
+        <p
+          class="pt-[32px] pb-[30px] text-center text-xs leading-[18px] text-white md:pt-[28px] md:pb-[34px]"
+        >
+          國立海洋生物博物館 版權所有 ©2016
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
