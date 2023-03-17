@@ -8,11 +8,109 @@
     <link rel="icon" href="../assets/images/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="bg-slate-200">
-    <h1 class="bg-secondary text-center text-primary">這裡是展區介紹</h1>
-    <h2 class="text-center text-primary">我是副標題</h2>
-    <p class="bg-slate-200 p-10 text-descript">這裡是內文</p>
-    <div class="h-5 bg-fn"></div>
-    <button class="btn my-10">更多資訊</button>
+  <body>
+    <section
+      class="relative z-[-10] flex h-[650px] items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/vidar-nordli-mathisen-njDnOteVf6c-unsplash.jpg')] bg-cover bg-center"
+    >
+      <img src="../assets/images/水族館-展區介紹/banner底圖.png" alt="" /
+      class="absolute top-0 h-full w-full z-[-5]">
+      <img
+        class="absolute bottom-0 z-[-3] md:hidden"
+        src="/assets/images/水族館-展區介紹/banner透明底圖small.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-2] md:hidden"
+        src="/assets/images/水族館-展區介紹/banner透明漸層-small.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-3] hidden md:bottom-[-50px] md:block lg:bottom-[-100px]"
+        src="/assets/images/水族館-展區介紹/banner透明底圖-big.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-2] hidden md:bottom-[-50px] md:block lg:bottom-[-100px]"
+        src="/assets/images/水族館-展區介紹/banner透明漸層-big.png"
+        alt=""
+      />
+
+      <section class="font-bold text-white">
+        <h1 class="z-10">展區介紹</h1>
+      </section>
+    </section>
+    <section class="hidden bg-white font-bold text-primary md:block">
+      <ul class="flex p-4 md:p-8 lg:px-16">
+        <li class="mx-2">
+          <h3>
+            <a href="">首頁</a>
+          </h3>
+        </li>
+        <li class="mx-1"><h3>></h3></li>
+        <li class="mx-2">
+          <h3><a href="">水族館</a></h3>
+        </li>
+        <li class="mx-1"><h3>></h3></li>
+        <li class="mx-2">
+          <h3><a href="">展區介紹</a></h3>
+        </li>
+      </ul>
+    </section>
+    <section class="relative">
+      <ul
+        class="flex flex-wrap p-6 font-bold text-primary md:text-[24px] lg:px-16"
+      >
+        <li
+          class="m-2 rounded-[8px] border border-primary bg-primary py-1 text-white md:rounded-none md:border-none md:bg-white md:text-primary"
+        >
+          <a href="" class="px-4 pb-2 md:border-b-4 md:border-fn">全部介紹</a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >台灣水域館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >珊瑚王國館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >世界水域館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >經典展示館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+      </ul>
+      <img
+        src="../assets/images/特展/小魚-1.png"
+        alt=""
+        class="absolute top-[45%] right-[5%] z-10 hidden w-[10%] md:top-[20%] md:z-[-2] md:block lg:right-[10%] lg:top-0"
+      />
+    </section>
   </body>
 </html>

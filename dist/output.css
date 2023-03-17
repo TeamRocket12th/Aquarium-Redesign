@@ -551,18 +551,138 @@ h3 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[45\%\] {
+  top: 45%;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-\[-10\] {
+  z-index: -10;
+}
+
+.z-\[-2\] {
+  z-index: -2;
+}
+
+.z-\[-3\] {
+  z-index: -3;
+}
+
+.z-\[-5\] {
+  z-index: -5;
+}
+
+.m-2 {
+  margin: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-5 {
   height: 1.25rem;
 }
 
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-\[8px\] {
+  border-radius: 8px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(18 49 96 / var(--tw-border-opacity));
+}
+
 .bg-fn {
   --tw-bg-opacity: 1;
   background-color: rgb(243 175 55 / var(--tw-bg-opacity));
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 49 96 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -580,12 +700,59 @@ h3 {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/\6C34\65CF\9928-\5C55\5340\4ECB\7D39\/vidar-nordli-mathisen-njDnOteVf6c-unsplash\.jpg\'\)\] {
+  background-image: url('../assets/images/水族館-展區介紹/vidar-nordli-mathisen-njDnOteVf6c-unsplash.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .p-10 {
   padding: 2.5rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-descript {
@@ -596,4 +763,103 @@ h3 {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(18 49 96 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+@media (min-width: 768px) {
+  .md\:bottom-\[-50px\] {
+    bottom: -50px;
+  }
+
+  .md\:top-\[20\%\] {
+    top: 20%;
+  }
+
+  .md\:z-\[-2\] {
+    z-index: -2;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:w-0 {
+    width: 0px;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
+  .md\:border-b-4 {
+    border-bottom-width: 4px;
+  }
+
+  .md\:border-none {
+    border-style: none;
+  }
+
+  .md\:border-fn {
+    --tw-border-opacity: 1;
+    border-color: rgb(243 175 55 / var(--tw-border-opacity));
+  }
+
+  .md\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:text-\[24px\] {
+    font-size: 24px;
+  }
+
+  .md\:text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(18 49 96 / var(--tw-text-opacity));
+  }
+
+  .group:hover .md\:group-hover\:w-\[100\%\] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:bottom-\[-100px\] {
+    bottom: -100px;
+  }
+
+  .lg\:right-\[10\%\] {
+    right: 10%;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
