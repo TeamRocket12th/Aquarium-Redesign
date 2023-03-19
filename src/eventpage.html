@@ -478,7 +478,9 @@
           <span class="mx-1">></span>
           <a href="#"> 特展介紹 </a>
         </div>
-        <ul class="flex flex-row gap-8 font-medium text-primary">
+        <ul
+          class="mt-[34px] ml-[30px] flex flex-row gap-8 font-medium text-primary md:ml-0 md:mt-0"
+        >
           <li class="px-[10px] pb-[10px] hover:border-b-4 hover:border-fn">
             <h2><a href="#">特展介紹</a></h2>
           </li>
@@ -491,7 +493,7 @@
         </ul>
         <!-- 魚 img -->
         <img
-          class="absolute right-[24px] top-[81px] h-[96px] w-[112px] xl:right-[132px] xl:top-[108px]"
+          class="absolute right-[24px] top-[81px] hidden h-[96px] w-[112px] md:block xl:right-[132px] xl:top-[108px]"
           src="../assets/images/特展/小魚-1.png"
           alt=""
         />
@@ -500,25 +502,57 @@
       <div
         class="relative z-0 mx-auto mt-[30px] flex flex-col items-center bg-[url('../assets/images/首頁/藍色底圖-big.png')] bg-cover bg-no-repeat px-[30px]"
       >
+        <img
+          class="h-30 absolute top-20 left-[211px] z-0 hidden w-20 object-contain md:flex"
+          src="../assets/images/特展/左上.png"
+          alt=""
+        />
+        <img
+          class="absolute left-0 right-0 top-0 -z-30 hidden object-contain md:flex"
+          src="../assets/images/特展/藍底企鵝圖.png"
+          alt=""
+        />
         <h1
-          class="mt-[147px] mb-[79px] inline rounded-full bg-fn px-[46px] pb-[2px] font-bold text-white"
+          class="mt-[147px] mb-[79px] inline rounded-full bg-fn px-[46px] pb-[2px] font-bold text-white shadow-xl"
         >
           現在特展
+          <p
+            class="absolute left-[50%] -mt-4 translate-x-[-50%] border-x-[17px] border-t-[35px] border-fn border-x-transparent"
+          ></p>
         </h1>
         <!-- 活動 card -->
-        <div
-          class="relative grid w-full grid-cols-1 gap-6 before:absolute before:top-[-93px] before:-z-10 before:flex before:h-[618px] before:w-[1012px] before:rounded-3xl before:bg-white before:opacity-90 before:content-[''] md:h-[210px] md:grid-cols-3 xl:h-[363px]"
+        <ul
+          class="relative grid w-full grid-cols-1 gap-6 before:absolute before:top-[-93px] before:left-0 before:right-0 before:-z-10 before:mx-auto before:rounded-3xl before:bg-white before:opacity-50 before:blur-sm before:content-[''] md:h-[210px] md:grid-cols-3 md:before:h-[456px] md:before:w-[644px] xl:h-[363px] xl:before:h-[618px] xl:before:w-[1012px]"
         >
-          <div
-            class="relative rounded-main bg-[url('../assets/images/特展/南藍繫雨.jpeg')] bg-cover bg-center bg-no-repeat after:absolute after:right-0 after:left-0 after:w-full after:bg-[#FFFFFF] after:py-[15px] after:opacity-[85%] after:content-['南藍繫語-潛進珊瑚海特展']"
-          ></div>
-          <div
-            class="rounded-main bg-[url('../assets/images/特展/究竟海洋探索.png')] bg-cover bg-center bg-no-repeat"
-          ></div>
-          <div
-            class="rounded-main bg-[url('../assets/images/特展/海洋因素.png')] bg-cover bg-center bg-no-repeat"
-          ></div>
-        </div>
+          <li
+            class="group relative h-[364px] overflow-hidden rounded-main bg-[url('../assets/images/特展/南藍繫雨.jpeg')] bg-cover bg-center bg-no-repeat shadow-xl md:h-[inherit]"
+          >
+            <p
+              class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 py-[15px] text-center font-bold text-primary opacity-0 duration-1000 ease-in group-hover:opacity-100 md:text-[16px] md:leading-6 xl:text-2xl xl:leading-9"
+            >
+              南藍繫語-潛進珊瑚海特展
+            </p>
+          </li>
+          <li
+            class="group relative h-[364px] overflow-hidden rounded-main bg-[url('../assets/images/特展/究竟海洋探索.png')] bg-cover bg-center bg-no-repeat shadow-xl md:h-[inherit]"
+          >
+            <p
+              class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 py-[15px] text-center font-bold text-primary opacity-0 duration-1000 ease-in group-hover:opacity-100 md:text-[16px] md:leading-6 xl:text-2xl xl:leading-9"
+            >
+              究竟海洋探索
+            </p>
+          </li>
+          <li
+            class="group relative h-[364px] overflow-hidden rounded-main bg-[url('../assets/images/特展/海洋因素.png')] bg-cover bg-center bg-no-repeat shadow-xl md:h-[inherit]"
+          >
+            <p
+              class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-80 py-[15px] text-center font-bold text-primary opacity-0 duration-1000 ease-in group-hover:opacity-100 md:text-[16px] md:leading-6 xl:text-2xl xl:leading-9"
+            >
+              海洋因素
+            </p>
+          </li>
+        </ul>
+        <button class="btn mt-[56px] mb-[108px] md:mb-[184px]">更多活動</button>
       </div>
 
       <!--------------------------------- info ---------------------------------->
@@ -539,7 +573,7 @@
               <a href="#"> 最新動態 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -561,7 +595,7 @@
               <a href="#"> 特展/活動 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -579,7 +613,7 @@
               <a href="#"> 水族館 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -597,7 +631,7 @@
               <a href="#"> 館務互動 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -623,7 +657,7 @@
               <a href="#"> 研究及保育 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -643,7 +677,7 @@
               <a href="#"> 教育資源 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
@@ -661,7 +695,7 @@
               <a href="#"> 關於我們 </a>
             </h3>
             <span
-              class="material-icons-outlined cursor-pointer text-[14px] xl:hidden"
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
             >
               add
             </span>
