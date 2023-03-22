@@ -8,11 +8,79 @@
     <link rel="icon" href="../assets/images/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="bg-slate-100">
-    <h1 class="my-10 text-center text-primary">這裡是首頁</h1>
-    <h2 class="text-center text-primary">我是副標題</h2>
-    <p class="bg-slate-200 p-10 text-descript">這裡是內文</p>
-    <div class="h-5 bg-fn"></div>
-    <button class="btn my-10">更多資訊</button>
+  <body class="font-sans">
+    <div class="mx-auto md:h-screen md:w-screen">
+      <div class="relative flex">
+        <img
+          class="hidden object-contain md:block md:h-full md:w-full lg:block lg:h-full lg:w-full"
+          src="https://github.com/TeamRocket12th/Aquarium-Redesign/blob/main/assets/images/%E9%A6%96%E9%A0%81/%E8%97%8D%E8%89%B2%E5%BA%95%E5%9C%96-big.png?raw=true"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="block h-[1300px] w-screen bg-secondary md:hidden lg:hidden"
+      ></div>
+
+      <div class="content absolute top-0 z-30 p-16 md:w-screen lg:w-screen">
+        <h1 class="my-10 text-center font-bold text-primary">節目表</h1>
+        <div
+          class="program-list grid grid-cols-2 gap-4 md:grid-cols-12 lg:grid-cols-12"
+        >
+          <div></div>
+          <div class="col-span-6 mx-6 mt-5 pb-9 md:col-span-10 lg:col-span-10">
+            <div class="mx-auto rounded-lg bg-white shadow-md sm:flex">
+              <img
+                class="`md:h-auto block h-auto rounded-tl-lg rounded-tr-lg md:w-[193px] md:rounded-tl-lg md:rounded-bl-lg md:rounded-tr-none lg:h-auto lg:w-[354px] lg:rounded-bl-lg lg:rounded-tl-lg lg:rounded-tr-none"
+                src="https://github.com/TeamRocket12th/Aquarium-Redesign/blob/main/assets/images/%E9%A6%96%E9%A0%81/%E6%B5%B7%E8%B1%B9%E9%A4%B5%E9%A3%9F%E8%A7%A3%E8%AA%AA.jpeg?raw=true"
+                alt=""
+              />
+              <div class="p-4 leading-normal md:my-8 lg:my-8">
+                <h2 class="font-bold text-blue-800 lg:mb-2">海豹餵食解說</h2>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  時間：每日2場，10:00、14:30
+                </p>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  持續時間：15分鐘
+                </p>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  地點：世界水域館
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="program-list grid grid-cols-2 gap-4 md:grid-cols-12 lg:grid-cols-12"
+        >
+          <div></div>
+          <div class="col-span-6 mx-6 mt-5 pb-9 md:col-span-10 lg:col-span-10">
+            <div class="mx-auto rounded-lg bg-white shadow-md sm:flex">
+              <img
+                class="block h-auto rounded-tl-lg rounded-tr-lg md:h-auto md:w-[193px] md:rounded-bl-lg md:rounded-tr-none lg:h-auto lg:w-[354px] lg:rounded-bl-lg lg:rounded-tr-none"
+                src="https://github.com/TeamRocket12th/Aquarium-Redesign/blob/main/assets/images/%E9%A6%96%E9%A0%81/%E5%A4%A7%E6%B4%8B%E6%8C%81%E6%B1%A0%E9%A4%B5%E9%A3%9F%E8%A7%A3%E8%AA%AA.jpeg?raw=true"
+              />
+              <div class="p-4 leading-normal md:my-8 lg:my-8">
+                <h2 class="font-bold text-blue-800 lg:mb-2">大洋池餵食解說</h2>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  時間：每日3場，10:00、13:00、14:30
+                </p>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  持續時間：15分鐘
+                </p>
+                <p class="text-sm md:text-sm lg:mb-2 lg:text-base">
+                  地點：台灣水域館
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn my-10">更多資訊</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
