@@ -8,6 +8,7 @@ module.exports = {
       sans: ["Noto Sans TC"],
     },
     extend: {
+      
       colors: {
         primary: "#123160",
         secondary: "#F1F8FF",
