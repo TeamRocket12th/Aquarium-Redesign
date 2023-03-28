@@ -19,6 +19,843 @@
     />
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
+  <body>
+    <header>
+      <!-- 導覽列 -->
+      <nav
+        class="absolute top-0 z-20 flex h-[64px] w-full items-center justify-between bg-primary pl-7 pr-8 shadow-lg xl:bg-transparent xl:shadow-none"
+      >
+        <a href="./index.html" class="w-[150px] md:w-[183px] xl:w-[309px]"
+          ><img src="../assets/images/logo-2.png" alt="logo" class="max-w-full"
+        /></a>
+        <ul class="flex items-center text-white">
+          <li class="hidden px-2 text-2xl xl:flex xl:items-center">
+            <span class="material-icons-outlined text-white"> public </span>
+            <select
+              id="language-select"
+              class="cursor-pointer appearance-none bg-transparent bg-[url('../assets/images/arrow-down.svg')] bg-right bg-no-repeat pr-8 pl-2 focus:outline-none"
+            >
+              <option value="" selected>Language</option>
+              <option value="chinese">中文</option>
+              <option value="english">English</option>
+            </select>
+          </li>
+          <li class="hidden px-2 xl:block">
+            <a href="#" class="whitespace-nowrap text-2xl">follow us</a>
+          </li>
+          <li class="ml-4 hidden text-2xl xl:flex xl:items-center">
+            <div class="h-5 border-l-2 border-white pr-3"></div>
+            <a href="#"><i class="fa-brands fa-youtube px-4"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f px-4"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram px-4"></i></a>
+          </li>
+          <li>
+            <button type="button" id="openBtn">
+              <i class="fa-solid fa-bars ml-12 cursor-pointer text-2xl"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="animate-fadeing absolute top-0 right-0 z-50 mx-auto hidden h-16 w-16 cursor-pointer bg-white hover:bg-primary xl:h-20 xl:w-20"
+        id="closeBtn"
+      >
+        <span
+          class="material-icons-outlined mx-auto flex h-full w-full items-center justify-center text-primary hover:text-white"
+        >
+          close
+        </span>
+      </button>
+      <!-- menu -->
+      <div
+        class="animate-fadeing absolute top-16 z-40 hidden h-screen w-full bg-primary pt-[104px] pb-80 opacity-90 xl:top-0 xl:px-40 xl:pb-[258px]"
+        id="menu"
+      >
+        <div class="absolute top-1 right-28 hidden xl:flex xl:items-center">
+          <span class="material-icons-outlined text-white"> public </span>
+          <select
+            id="language-select"
+            class="cursor-pointer appearance-none bg-transparent bg-[url('../assets/images/arrow-down.svg')] bg-right bg-no-repeat py-6 pr-8 pl-2 text-2xl text-white focus:outline-none"
+          >
+            <option value="" selected>Language</option>
+            <option value="chinese">中文</option>
+            <option value="english">English</option>
+          </select>
+        </div>
+
+        <ul
+          class="grid grid-cols-1 gap-6 text-base font-bold text-white xl:grid-cols-4 xl:text-2xl"
+        >
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              最新動態
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >館方快訊
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                相關報導
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >電子報
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >影音專區
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >館方花絮
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >主題專區
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >奧秘海洋部落格
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              特展/活動
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >特展介紹
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                海生館節目表
+              </li>
+              <li>
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >科教活動
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              水族館
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >展區介紹
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                展館線上看
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >館區平面圖
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >無障礙動線及設施
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              產學文創
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              研究及保育
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >研究主題網
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                典藏系統
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >保育
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >白鯨研究與照護
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >海洋學院
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >研究人員
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              教育資源
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >國中小教學資源
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                行動展示箱
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >多媒體影音管理平台
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              館務活動
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >服務及票價
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                網路購票
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >夜宿海生館
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >無障礙服務
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >交通資訊
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >場地租借
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >常見問與答 Q&A
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >我要諮詢
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >諮詢進度查詢
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >海生館節目表
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >雙語詞彙表
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >問卷調查
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p
+              class="relative cursor-pointer border-b border-descript pl-3 pb-5 xl:cursor-auto xl:border-b-2 xl:border-white xl:pl-0 xl:pb-2"
+            >
+              關於我們
+              <span class="triangle hidden xl:block"></span>
+              <span class="material-icons-outlined absolute right-7 xl:hidden">
+                expand_more
+              </span>
+            </p>
+            <ul class="hidden pt-4 text-base font-normal xl:block">
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >關於本館
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right
+                </span>
+                政府公開資訊
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >本館的施政計畫
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >組織編制與聯絡
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >聯絡資訊
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >館區配置
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >為民服務理念
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >檔案管理應用專區
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >圖書館（另開連結）
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >建館緣由
+              </li>
+              <li class="flex py-2">
+                <span class="material-icons-outlined">
+                  keyboard_arrow_right </span
+                >公職人員利益衝突 迴避法專區
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section
+      class="relative z-[-10] flex h-[650px] items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/vidar-nordli-mathisen-njDnOteVf6c-unsplash.jpg')] bg-cover bg-center"
+    >
+      <img
+        src="../assets/images/水族館-展區介紹/banner底圖.png"
+        alt=""
+        class="absolute top-0 z-[-5] h-full w-full"
+      />
+      <img
+        class="absolute bottom-0 z-[-3] md:hidden"
+        src="/assets/images/水族館-展區介紹/banner透明底圖small.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-2] md:hidden"
+        src="/assets/images/水族館-展區介紹/banner透明漸層-small.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-3] hidden md:bottom-[-50px] md:block lg:bottom-[-100px]"
+        src="/assets/images/水族館-展區介紹/banner透明底圖-big.png"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 z-[-2] hidden md:bottom-[-50px] md:block lg:bottom-[-100px]"
+        src="/assets/images/水族館-展區介紹/banner透明漸層-big.png"
+        alt=""
+      />
+
+      <section class="font-bold text-white">
+        <h1 class="z-10">展區介紹</h1>
+      </section>
+    </section>
+    <section class="hidden bg-white font-bold text-primary md:block">
+      <ul class="flex p-4 md:p-8 lg:px-16">
+        <li class="mx-2">
+          <h3>
+            <a href="">首頁</a>
+          </h3>
+        </li>
+        <li class="mx-1"><h3>></h3></li>
+        <li class="mx-2">
+          <h3><a href="">水族館</a></h3>
+        </li>
+        <li class="mx-1"><h3>></h3></li>
+        <li class="mx-2">
+          <h3><a href="">展區介紹</a></h3>
+        </li>
+      </ul>
+    </section>
+    <section class="relative">
+      <ul
+        class="flex flex-wrap p-6 font-bold text-primary md:text-[24px] lg:px-16"
+      >
+        <li
+          class="m-2 rounded-[8px] border border-primary bg-primary py-1 text-white md:rounded-none md:border-none md:bg-white md:text-primary"
+        >
+          <a href="" class="px-4 pb-2 md:border-b-4 md:border-fn">全部介紹</a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >台灣水域館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >珊瑚王國館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >世界水域館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+        <li
+          class="m-2 rounded-[8px] border border-primary py-1 md:rounded-none md:border-none"
+        >
+          <a href="" class="group p-4"
+            >經典展示館
+            <div
+              class="ml-2 hidden pb-1 transition-all duration-300 md:block md:w-0 md:border-b-4 md:border-fn md:group-hover:w-[100%]"
+            ></div
+          ></a>
+        </li>
+      </ul>
+      <img
+        src="../assets/images/特展/小魚-1.png"
+        alt=""
+        class="absolute top-[45%] right-[5%] z-10 hidden w-[10%] md:top-[20%] md:z-[-2] md:block lg:right-[10%] lg:top-0"
+      />
+    </section>
+
+    <!-- 卡片區 -->
+    <section class="container mx-auto p-6">
+      <div class="card my-6 overflow-hidden rounded md:flex md:py-9 md:px-3">
+        <div
+          class="card-img relative flex h-48 items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/迎賓廣場.jpeg')] bg-cover bg-center md:h-52 md:w-96 md:rounded"
+        ></div>
+        <div class="flex flex-col px-8">
+          <h2
+            class="border-b border-solid border-black py-4 font-bold text-blue-900"
+          >
+            迎賓廣場
+          </h2>
+          <p class="py-4">
+            入口處有太平洋親水廣場及鯨魚親水廣場，
+            皆以等比例製作的實體模型展示...
+          </p>
+          <a
+            class="md:px-15 hidden md:inline-block md:h-12 md:w-56 md:rounded-full md:border-2 md:border-blue-900 md:py-3 md:text-center md:text-blue-900"
+            href="#"
+          >
+            觀看更多內容
+          </a>
+        </div>
+      </div>
+      <div class="card my-6 overflow-hidden rounded md:flex md:py-9 md:px-3">
+        <div
+          class="card-img relative flex h-48 items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/台灣水域館.jpeg')] bg-cover bg-center md:h-52 md:w-96 md:rounded"
+        ></div>
+        <div class="flex flex-col px-8">
+          <h2
+            class="border-b border-solid border-black py-4 font-bold text-blue-900"
+          >
+            台灣水域館
+          </h2>
+          <p class="py-4">
+            以水的循環為故事主軸，藉由一滴小水滴的旅行，呈現台灣從冷冽的高山...
+          </p>
+          <a
+            class="md:px-15 hidden md:inline-block md:h-12 md:w-56 md:rounded-full md:border-2 md:border-blue-900 md:py-3 md:text-center md:text-blue-900"
+            href="#"
+          >
+            觀看更多內容
+          </a>
+        </div>
+      </div>
+      <div class="card my-6 overflow-hidden rounded md:flex md:py-9 md:px-3">
+        <div
+          class="card-img relative flex h-48 items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/珊瑚王國館.jpeg')] bg-cover bg-center md:h-52 md:w-96 md:rounded"
+        ></div>
+        <div class="flex flex-col px-8">
+          <h2
+            class="border-b border-solid border-black py-4 font-bold text-blue-900"
+          >
+            珊瑚王國館
+          </h2>
+          <p class="py-4">
+            以珊瑚礁漂潛為故事主軸，藉由逐漸下潛海底所看到的海底生物景觀...
+          </p>
+          <a
+            class="md:px-15 hidden md:inline-block md:h-12 md:w-56 md:rounded-full md:border-2 md:border-blue-900 md:py-3 md:text-center md:text-blue-900"
+            href="#"
+          >
+            觀看更多內容
+          </a>
+        </div>
+      </div>
+      <div class="card my-6 overflow-hidden rounded md:flex md:py-9 md:px-3">
+        <div
+          class="card-img relative flex h-48 items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/世界水域館.jpeg')] bg-cover bg-center md:h-52 md:w-96 md:rounded"
+        ></div>
+        <div class="flex flex-col px-8">
+          <h2
+            class="border-b border-solid border-black py-4 font-bold text-blue-900"
+          >
+            世界水域館
+          </h2>
+          <p class="py-4">
+            以時空探查艇遨遊時空及各海域為故事主軸，藉由即時運算之虛擬...
+          </p>
+          <a
+            class="md:px-15 hidden md:inline-block md:h-12 md:w-56 md:rounded-full md:border-2 md:border-blue-900 md:py-3 md:text-center md:text-blue-900"
+            href="#"
+          >
+            觀看更多內容
+          </a>
+        </div>
+      </div>
+      <div class="card my-6 overflow-hidden rounded md:flex md:py-9 md:px-3">
+        <div
+          class="card-img relative flex h-48 items-center justify-center overflow-hidden bg-[url('../assets/images/水族館-展區介紹/鯨典展示館.jpeg')] bg-cover bg-center md:h-52 md:w-96 md:rounded"
+        ></div>
+        <div class="flex flex-col px-8">
+          <h2
+            class="border-b border-solid border-black py-4 font-bold text-blue-900"
+          >
+            鯨典展示館
+          </h2>
+          <p class="py-4">
+            路過後灣，從海邊就可以遠望，有一棟顯眼的鯨魚造型建築，這就是「鯨典館」。
+          </p>
+          <a
+            class="md:px-15 hidden md:inline-block md:h-12 md:w-56 md:rounded-full md:border-2 md:border-blue-900 md:py-3 md:text-center md:text-blue-900"
+            href="#"
+          >
+            觀看更多內容
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------- footer ---------------------------------->
+    <footer>
+      <!-- footer bar-->
+      <section
+        class="w-full bg-secondary px-[30px] pt-[36px] pb-[55px] text-primary md:px-[117px] xl:px-[134px]"
+      >
+        <div
+          class="flex flex-col items-start gap-6 xl:flex-row xl:justify-between xl:gap-7"
+        >
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 最新動態 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">館方快訊</a></li>
+              <li><a href="#">相關報導</a></li>
+              <li><a href="#">新南向政策</a></li>
+              <li><a href="#">電子報</a></li>
+              <li><a href="#">影音專區</a></li>
+              <li><a href="#">館方花絮</a></li>
+              <li><a href="#">主題專區</a></li>
+              <li><a href="#">奧秘海洋部落格</a></li>
+            </ul>
+          </div>
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 特展/活動 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">特展介紹</a></li>
+              <li><a href="#">海生館節目表</a></li>
+              <li><a href="#">科教活動</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 水族館 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">展區介紹</a></li>
+              <li><a href="#">展館線上看</a></li>
+              <li><a href="#">無障礙動線及設施</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 館務互動 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">服務及票價</a></li>
+              <li><a href="#">網路購票</a></li>
+              <li><a href="#">夜宿海生館</a></li>
+              <li><a href="#">無障礙服務</a></li>
+              <li><a href="#">交通資訊</a></li>
+              <li><a href="#">場地租借</a></li>
+              <li><a href="#">常見問與答Q&A</a></li>
+              <li><a href="#">我要諮詢</a></li>
+              <li><a href="#">諮詢進度查詢</a></li>
+              <li><a href="#">雙語詞彙表</a></li>
+              <li><a href="#">問卷調查</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 研究及保育 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">研究主題網</a></li>
+              <li><a href="#">保育</a></li>
+              <li><a href="#">白鯨研究與照護</a></li>
+              <li><a href="#">海洋學院</a></li>
+              <li><a href="#">研究人員</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 教育資源 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">國中小教學資源</a></li>
+              <li><a href="#">行動展示箱</a></li>
+              <li><a href="#">多媒體影音管理平台</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="flex w-full flex-row items-center justify-between border-b border-primary xl:w-auto xl:flex-col xl:items-start xl:border-none"
+          >
+            <h3 class="pb-1 font-bold xl:pb-2">
+              <a href="#"> 關於我們 </a>
+            </h3>
+            <span
+              class="material-icons-outlined text-5 cursor-pointer xl:hidden"
+            >
+              add
+            </span>
+            <ul class="hidden flex-col gap-2 text-base font-normal xl:flex">
+              <li><a href="#">關於本館</a></li>
+              <li><a href="#">政府公開資訊</a></li>
+              <li><a href="#">本館的施政計畫</a></li>
+              <li><a href="#">組織編制與聯絡</a></li>
+              <li><a href="#">聯絡資訊</a></li>
+              <li><a href="#">館區配置</a></li>
+              <li><a href="#">為民服務理念</a></li>
+              <li><a href="#">檔案管理應用專區</a></li>
+              <li><a href="#">圖書館（另開連結）</a></li>
+              <li><a href="#">建館緣由</a></li>
+              <li>
+                <a href="#">公職人員利益衝突<br />迴避法專區</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-[84px] flex flex-col gap-8 md:flex-row md:items-end md:justify-between xl:mt-[135px]"
+        >
+          <!-- 國立海洋生物博物館 -->
+          <div class="w-[328px]">
+            <h3 class="border-b border-primary pb-3 font-bold">
+              國立海洋生物博物館
+            </h3>
+            <p class="pt-3 text-[14px]">944401 屏東縣車城鄉後灣村後灣路2號</p>
+            <p class="whitespace-nowrap pt-3 text-[14px]">
+              遊客服務電話: (08) 882-5678 ｜傳真: (08) 882-5061
+            </p>
+            <p class="whitespace-nowrap pt-3 text-[14px]">
+              公部門電話: (08) 882-5001 ｜傳真: (08) 882-4504
+            </p>
+          </div>
+          <!-- soical media icon -->
+          <div class="flex w-[20%] gap-4 md:justify-end">
+            <a href="#">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-primary p-2 text-[20px] text-white"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-primary p-2 text-[20px] text-white"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </span>
+            </a>
+            <a href="#">
+              <span
+                class="flex h-9 w-9 items-center justify-center rounded-full bg-primary p-2 text-[20px] text-white"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <div class="w-full bg-primary">
+        <p
+          class="pt-[32px] pb-[30px] text-center text-xs leading-[18px] text-white md:pt-[28px] md:pb-[34px]"
+        >
+          國立海洋生物博物館 版權所有 ©2016
+        </p>
+      </div>
+    </footer>
   </body>
   <style>
     /*menu 向下箭頭*/
