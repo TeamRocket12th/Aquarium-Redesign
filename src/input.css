@@ -5,4 +5,11 @@
   .btn {
     @apply rounded-[100px] border border-primary bg-white py-2 px-16 text-2xl font-bold text-primary hover:bg-primary hover:text-white;
   }
+  .container {
+    /* background-color: #f1f8ff; */
+    background-image: url("https://github.com/TeamRocket12th/Aquarium-Redesign/blob/dev/assets/images/%E9%A6%96%E9%A0%81/%E8%97%8D%E8%89%B2%E5%BA%95%E5%9C%96-big.png?raw=true");
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
 }
