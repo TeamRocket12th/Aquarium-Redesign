@@ -8,6 +8,7 @@ module.exports = {
       sans: ["Noto Sans TC"],
     },
     extend: {
+      
       colors: {
         primary: "#123160",
         secondary: "#F1F8FF",
@@ -16,6 +17,15 @@ module.exports = {
       },
       borderRadius: {
         main: "8px",
+      },
+      keyframes: {
+        fadein: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 0.9 },
+        },
+      },
+      animation: {
+        fadeing: 'fadein 0.5s',
       },
     },
   },
