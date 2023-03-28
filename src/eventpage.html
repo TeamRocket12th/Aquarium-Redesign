@@ -184,9 +184,11 @@
 
             <ul class="hidden pt-4 text-base font-normal xl:block">
               <li class="flex py-2">
-                <span class="material-icons-outlined">
-                  keyboard_arrow_right </span
-                >特展介紹
+                <a href="eventpage.html" class="flex">
+                  <span class="material-icons-outlined">
+                    keyboard_arrow_right </span
+                  >特展介紹
+                </a>
               </li>
               <li class="flex py-2">
                 <span class="material-icons-outlined">
@@ -213,9 +215,11 @@
             </p>
             <ul class="hidden pt-4 text-base font-normal xl:block">
               <li class="flex py-2">
-                <span class="material-icons-outlined">
-                  keyboard_arrow_right </span
-                >展區介紹
+                <a href="exhibitpage.html" class="flex">
+                  <span class="material-icons-outlined">
+                    keyboard_arrow_right </span
+                  >展區介紹
+                </a>
               </li>
               <li class="flex py-2">
                 <span class="material-icons-outlined">
@@ -979,17 +983,17 @@
     }
   </style>
   <script>
-    const openMenuBtn = document.querySelector("#openBtn");
-    const closeMenuBtn = document.querySelector("#closeBtn");
-    const menu = document.querySelector("#menu");
+    const openMenuBtn = document.querySelector('#openBtn');
+    const closeMenuBtn = document.querySelector('#closeBtn');
+    const menu = document.querySelector('#menu');
 
     function toggleMenu() {
-      menu.classList.toggle("hidden");
-      openMenuBtn.classList.toggle("hidden");
-      closeMenuBtn.classList.toggle("hidden");
+      menu.classList.toggle('hidden');
+      openMenuBtn.classList.toggle('hidden');
+      closeMenuBtn.classList.toggle('hidden');
     }
 
-    openMenuBtn.addEventListener("click", toggleMenu);
-    closeMenuBtn.addEventListener("click", toggleMenu);
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
   </script>
 </html>
